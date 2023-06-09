@@ -1,1 +1,1 @@
-# CS484 Introduction to Computer Vision Term Project BrainTumorClassifier 
+# CS484 Introduction to Computer Vision Term Project Brain Tumor Classifier 
