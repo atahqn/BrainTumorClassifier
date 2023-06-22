@@ -29,11 +29,11 @@ If a GPU is available, the code is configured to use it for training the models,
 
 ## Image Transformation
 
-Images are resized to 150x150 pixels, and also a random horizontal flip is applied. Then they are converted to tensor and normalized.
+Images are resized to 150x150 pixels, and also a random horizontal flip is applied. Then they are converted to tensors and normalized.
 
 ## Dataset Preparation
 
-Train and test datasets are loaded from the specified paths. Both datasets are combined and then split into train, validation, and test sets. The split is 80% for training, 10% for validation, and 10% for testing.
+Train and test datasets are loaded from the specified paths. Both datasets are combined and then split into the train, validation, and test sets. The split is 80% for training, 10% for validation, and 10% for testing.
 
 ## Models
 
@@ -45,10 +45,14 @@ The following models are used:
 - Pre-trained EfficientNet B0
 - Non pre-trained EfficientNet B0
 
-For pre-trained models, all layers except the last one are frozen, and a new last layer is added for the 4-class classification task.
+All layers except the last one are frozen for pre-trained models, and a new last layer is added for the 4-class classification task.
 
 ## Training, Inference, and Testing
 
 The code includes functions for training the model, making predictions on the validation set, and evaluating the model on the test set. The loss function used is CrossEntropyLoss.
+In progress, SGD with momentum optimizer is used. In the final version, the optimizer changed to the Adam optimizer.
 
-Please note that this README is a work in progress and the code is subject to change. We are constantly working to improve and update the code.
+## Results
+
+Detailed results and visualizations can be found in the project report.
+
